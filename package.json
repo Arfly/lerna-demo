@@ -1,0 +1,26 @@
+{
+  "name": "lerna-vue-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arfly/lerna-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arfly/lerna-demo/issues"
+  },
+  "homepage": "https://github.com/Arfly/lerna-demo#readme",
+  "workspaces": [
+    "packages/*",
+    "projects/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.5.0"
+  }
+}
