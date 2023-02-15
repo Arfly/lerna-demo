@@ -1,6 +1,11 @@
 import vue from 'rollup-plugin-vue'
 import typescript from 'rollup-plugin-typescript2';
 
+const overrides = {
+  compilerOptions: {declaration: true},
+  exclude: ["tests/**/*.ts", "tests/**/*.tsx"],
+}
+
 export default {
   input: './src/App.vue',
   output: [
@@ -13,6 +18,9 @@ export default {
   ],
   external: ['vue'],
   plugins: [
-    vue()
+    typescript({
+      tsconfigOverride: overrides
+    }),
+    vue(),
   ]
 }

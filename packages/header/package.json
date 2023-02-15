@@ -1,8 +1,8 @@
 {
   "name": "header",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/App.js",
   "scripts": {
     "dev": "vite",
     "build": "rimraf dist && rollup --config",
@@ -11,6 +11,7 @@
   "dependencies": {
     "element-plus": "^2.2.30",
     "rollup": "^3.15.0",
+    "rollup-plugin-typescript2": "^0.34.1",
     "rollup-plugin-vue": "^6.0.0",
     "vue": "^3.2.45"
   },

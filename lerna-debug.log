@@ -1,0 +1,17 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   scope: 'header',
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '6.5.0',
+0 silly argv   '$0': '/Users/hanfei/Documents/workspace/github/lerna-demo/node_modules/.bin/lerna',
+0 silly argv   pkg: '@types@'
+0 silly argv }
+1 notice cli v6.5.0
+2 verbose rootPath /Users/hanfei/Documents/workspace/github/lerna-demo
+3 error Error: Invalid package name "@types": name can only contain URL-friendly characters
+3 error     at invalidPackageName (/Users/hanfei/Documents/workspace/github/lerna-demo/node_modules/npm-package-arg/npa.js:89:15)
+3 error     at Result.setName (/Users/hanfei/Documents/workspace/github/lerna-demo/node_modules/npm-package-arg/npa.js:124:11)
+3 error     at new Result (/Users/hanfei/Documents/workspace/github/lerna-demo/node_modules/npm-package-arg/npa.js:114:23)
+3 error     at resolve (/Users/hanfei/Documents/workspace/github/lerna-demo/node_modules/npm-package-arg/npa.js:61:15)
+3 error     at npa (/Users/hanfei/Documents/workspace/github/lerna-demo/node_modules/npm-package-arg/npa.js:55:10)
+3 error     at AddCommand.initialize (/Users/hanfei/Documents/workspace/github/lerna-demo/node_modules/lerna/dist/cli.js:5041:57)
